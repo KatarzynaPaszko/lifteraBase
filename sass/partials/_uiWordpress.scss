@@ -1,0 +1,65 @@
+.article {
+
+}
+
+.article img {
+  max-width: 100%;
+  margin: 40px 40px 0px 40px;
+}
+
+@media only screen and (max-width: 769px) {
+  .article img {
+    margin: 10px 0 0 0;
+  }
+}
+
+
+.article figure {
+  float: left;
+}
+
+.article figcaption {
+  color: $second-color;
+  margin: 0 40px;
+}
+
+.article h1,
+.article h2,
+.article h3,
+.article h4 {
+  margin-top: 40px;
+}
+
+.article p {
+  margin-top: 10px;
+}
+
+.article ul {
+  list-style: none;
+  & li::before {
+    content: "•";
+    color: $first-color;
+    margin-right: 10px;
+  }
+  & ul li::before {
+    content: "•";
+    color: black;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+  & ul ul li::before {
+    content: "•";
+    color: black;
+    margin-right: 10px;
+    margin-left: 40px;
+  }
+}
+
+.article ol {
+  list-style-position: inside;
+  & ol {
+    list-style-type: lower-alpha;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+}

@@ -1,0 +1,47 @@
+.folders {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  & .catalog {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1004px) {
+  .folders .catalog  {
+    max-width: 50%;
+  }
+}
+
+.catalog {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 20px;
+  max-width: 50%;
+}
+
+.catalog__img {
+  border: 1px solid transparent;
+  max-width: 50%;
+  & img {
+    width: 100%;
+    box-shadow: -10px 10px 10px $third-color;
+  }
+  &:hover {
+    box-shadow: none;
+    border: 1px solid $second-color;
+    cursor: pointer;
+  }
+}
+
+.btn__download {
+  background-color: $first-color;
+  color: white
+}
